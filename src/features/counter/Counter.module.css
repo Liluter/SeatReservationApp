@@ -1,0 +1,182 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.row > button {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.row:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.value {
+  font-size: 78px;
+  padding-left: 0px;
+  padding-right: 16px;
+  margin-top: 2px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.button {
+  appearance: none;
+  background: none;
+  font-size: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+  outline: none;
+  border: 2px solid transparent;
+  color: rgb(112, 76, 182);
+  padding-bottom: 4px;
+  cursor: pointer;
+  background-color: rgba(112, 76, 182, 0.1);
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+.buttonClear {
+  width:250px;
+  height:60px;
+  appearance: none;
+  background: none;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top:12px;
+  padding-bottom:12px;
+  outline: none;
+  border: 3px solid #333;
+  color: #000;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s;
+  
+}
+
+.textbox {
+  width:auto;
+  font-size: 32px;
+  padding: 2px;
+  text-align: center;
+  margin-left: 28px;
+}
+
+/* .row label {
+margin-top: 40px;
+margin-bottom: 40px;
+} */
+
+.button:hover,
+.button:focus {
+  border: 2px solid rgba(112, 76, 182, 0.4);
+}
+
+.buttonClear:hover, .buttonClear:focus{
+  border: 3px solid #1890ff;
+}
+
+.button:active {
+  background-color: rgba(112, 76, 182, 0.2);
+}
+
+.asyncButton {
+  composes: button;
+  position: relative;
+}
+
+.asyncButton:after {
+  content: '';
+  background-color: rgba(112, 76, 182, 0.15);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: width 1s linear, opacity 0.5s ease 1s;
+}
+
+.asyncButton:active:after {
+  width: 0%;
+  opacity: 1;
+  transition: 0s;
+}
+
+input[type='checkbox'] {
+margin-right:20px;
+width:24px;
+height:24px;
+margin-top:30px;
+margin-bottom:30px;
+}
+
+.Seat {
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  padding: 2px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: #ddd;
+  transition: background-color 0.1s;
+}
+
+.SeatInfo {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  padding: 2px;
+  text-align: center;
+  border: 2px solid #1890ff;
+  border-radius: 10px;
+  background-color: rgb(204, 223, 231);
+  transition: background-color 0.1s;
+  margin:10px;
+}
+
+.Seat:hover.available {
+  background-color: rgb(224, 120, 16);
+}
+
+.reserved {
+  background-color: #333;
+  color: #ddd;
+}
+
+.available {
+  border: 3px solid rgb(224, 120, 16);
+  color: rgb(130, 127, 127);
+}
+.possible {
+  border: 3px solid #1890ff;
+  color: rgb(130, 127, 127);
+}
+
+.room {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 12px 12px;
+  background-color: #f0f2f5;
+}
+
+.summary {
+  display:flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  color:rgb(77, 11, 132)
+}
+
+.ownReservation {
+  background-color: rgb(224, 120, 16);
+  border: 2px solid black;
+  color: #ddd;
+}
