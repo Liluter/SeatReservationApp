@@ -18,7 +18,7 @@ export function Counter({isChecked , handleChange}) {
   const seatStatus = useSelector((state) => state.seats.status);
   const handleCount = (num) => {
     dispatch(countIncrementByAmount(num))
-    console.log(num, countActual)
+    // console.log(num, countActual)
   }
   
   useEffect(() => {
@@ -33,7 +33,7 @@ export function Counter({isChecked , handleChange}) {
             <Header style={{color:"#ddd"}}>
             <Row justify="center"><Col >😃 Welcome to our seat reservation application 😃</Col></Row>
             </Header>
-            <Content  >
+            <Content   >
               <Row justify="center" align="middle" style={{height:"100%"}}>
                 <Col justify="left" align="middle" span={6}>
                   <Form
@@ -46,7 +46,7 @@ export function Counter({isChecked , handleChange}) {
                     }}
                     wrapperCol={{ span: 10 }}
                     labelAlign="left"
-                    label="Number of seats :">
+                    label="Number of seats:">
                       <InputNumber
                         style={{ width: '100%' }}
                         size="large"

@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import {Link} from 'react-router-dom';
-import styles from '../counter/Counter.module.css';
 import "antd/dist/antd.css";
+import styles from '../counter/Counter.module.css';
 import {Layout, Space, List, Col, Row } from 'antd'
 import { selectAllSeats,
   seatsUpdate,
@@ -122,7 +122,7 @@ let content
 content = (
   <div className={styles.room} >
       {Seats.map((seat) => (
-        <Seat key={seat.id} seat={seat} isChecked={isChecked} count={countActual} onToggle={toggleReservation}  >
+        <Seat key={seat.id} data-cy seat={seat} isChecked={isChecked} count={countActual} onToggle={toggleReservation}  >
         </Seat>
       ))}
     </div>

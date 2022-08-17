@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <Layout className="Container" style={{heightMin:"100vh"}} >
+    <Layout className="Container" style={{height:"100vh"}} >
       <Routes>
         <Route path="/" element={<Counter isChecked={checked} handleChange={handleChange} />}/>
         <Route path="/room" element={<Room isChecked={checked} />}/>
