@@ -1,7 +1,6 @@
 {
   "name": "seatbook",
   "version": "0.1.0",
-  "homepage": "https://liluter.github.io/SeatReservationApp/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
