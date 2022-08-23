@@ -13,12 +13,33 @@ import {Button,Form, InputNumber, Checkbox, Col,Row , Layout} from 'antd'
 const {Content, Header } = Layout;
 
 export function Counter({isChecked , handleChange}) {
+  // Fetch local db file
+  // let data
+  // const collect = (arg) => {
+  //   data = arg
+  //   console.log(data.seats[0])
+  // }
+  // useEffect(()=> {
+  //   const getTasks = async () => {
+  //     const tasksFromServer = await fetchTasks()
+  //     collect(tasksFromServer)
+  //   }
+  //   getTasks()
+  // },[] )
+
+  // // Fetch Tasks
+  // const fetchTasks = async () => {
+  //   const res = await fetch('db.json')
+  //   const data = await res.json()
+
+  //   return data
+  // }
+
   const dispatch = useDispatch();
   const countActual = useSelector(countState)
   const seatStatus = useSelector((state) => state.seats.status);
   const handleCount = (num) => {
     dispatch(countIncrementByAmount(num))
-    // console.log(num, countActual)
   }
   
   useEffect(() => {
@@ -31,7 +52,7 @@ export function Counter({isChecked , handleChange}) {
   return (
           <>
             <Header style={{color:"#ddd"}}>
-            <Row justify="center"><Col >😃 Welcome to our seat reservation application 😃</Col></Row>
+            <Row justify="center"><Col style={{color:"#ddd", fontSize:"24px"}} >😃 Welcome to our seat reservation application 😃</Col></Row>
             </Header>
             <Content   >
               <Row justify="center" align="middle" style={{height:"100%"}}>
@@ -72,3 +93,4 @@ export function Counter({isChecked , handleChange}) {
           </>
   );
 }
+

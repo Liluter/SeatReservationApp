@@ -1,8 +1,10 @@
 export const fetchSeatsServ = async () => {
-  const res =  await fetch('http://localhost:5000/seats')
+  const res =  await fetch('db.json')
   const data = await res.json()
-  data.forEach((e,i,a)=>{
+  data.seats.forEach((e,i,a)=>{
     a[i] = Object.assign({}, e, {myRes: false}, {selPos: false}) 
     })
-  return data
+  return data.seats
 }
+//http://localhost:5000/seats its from local server
+// db.json from local file in public directory

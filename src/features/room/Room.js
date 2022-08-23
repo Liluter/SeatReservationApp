@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {Link} from 'react-router-dom';
 import "antd/dist/antd.css";
 import styles from '../counter/Counter.module.css';
-import {Layout, Space, List, Col, Row } from 'antd'
+import {Layout, Space, Col, Row } from 'antd'
 import { selectAllSeats,
   seatsUpdate,
   countState
@@ -145,7 +145,7 @@ if (countActual > 0 && countActual <=5) {
       <Space direction="vertical" size="middle" >
         <Header  theme="light" style={{color:"#ddd"}} >
           <Row >
-            <Col span={8} offset={5}>{header}</Col>
+            <Col style={{color:"#ddd", fontSize:"24px"}} span={8} offset={5}>{header}</Col>
             <Col span={2} offset={6}  ><div style={{display: 'flex', alignItems: 'center'}}> <div className={`${styles.SeatInfo}`} style={{fontSize:"24px",color:"#111"}}>{status}</div> </div></Col>
           </Row>
         </Header>
@@ -166,3 +166,4 @@ if (countActual > 0 && countActual <=5) {
     </Layout>
   )
 }
+
