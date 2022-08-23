@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Routes, Route} from 'react-router-dom';
 import { Counter } from './features/counter/Counter';
 import { Room } from './features/room/Room';
-import { Summary } from './features/summary/Summary';
+import { Summary } from './features/Summary/Summary';
 import {Layout} from 'antd'
 import './App.css';
 
