@@ -1,6 +1,7 @@
 {
   "name": "seatbook",
   "version": "0.1.0",
+  "homepage": "https://seat-reservation-app-liluter.herokuapp.com/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
