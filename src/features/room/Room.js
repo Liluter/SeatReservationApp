@@ -155,10 +155,10 @@ if (countActual > 0 && countActual <=5) {
         <Footer style={{width:"100%"}}>
           <Layout>
             <Row justify="center" align="middle"  >
-                <Col span={4}><div style={{display: 'flex', alignItems: 'center'}}> <div className={`${styles.Seat}`} style={{float: 'left', marginRight:"12px"}}></div>Miejsca dostępne </div></Col>
-                <Col span={4}><div style={{display: 'flex', alignItems: 'center'}}> <div className={`${styles.Seat} ${styles.reserved}`} style={{float: 'left', marginRight:"12px"}}></div >Miejsca zarezerwowane </div></Col>
-                <Col span={4}><div style={{display: 'flex', alignItems: 'center'}}> <div className={`${styles.Seat} ${styles.ownReservation}`} style={{float: 'left', marginRight:"12px"}}></div>Twój Wybór</div></Col>
-                <Col span={4}><Link  to="/summary"><button className={styles.buttonClear}>Rezerwuj</button></Link></Col>
+                <Col span={4}><div style={{display: 'flex', alignItems: 'center'}}> <div className={`${styles.Seat}`} style={{float: 'left', marginRight:"12px"}}></div>Seat available</div></Col>
+                <Col span={4}><div style={{display: 'flex', alignItems: 'center'}}> <div className={`${styles.Seat} ${styles.reserved}`} style={{float: 'left', marginRight:"12px"}}></div >Seat reserved</div></Col>
+                <Col span={4}><div style={{display: 'flex', alignItems: 'center'}}> <div className={`${styles.Seat} ${styles.ownReservation}`} style={{float: 'left', marginRight:"12px"}}></div>Your choice</div></Col>
+                <Col span={4}><Link  to="/summary"><button className={styles.buttonClear}>Reserve</button></Link></Col>
             </Row>
           </Layout>
         </Footer>

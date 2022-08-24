@@ -52,7 +52,7 @@ export function Counter({isChecked , handleChange}) {
   return (
           <>
             <Header style={{color:"#ddd"}}>
-            <Row justify="center"><Col style={{color:"#ddd", fontSize:"24px"}} >😃 Welcome to our seat reservation application 😃</Col></Row>
+            <Row justify="center"><Col style={{color:"#ddd", fontSize:"24px"}} ><span role="img" aria-label="smile">😃</span> Welcome to our seat reservation application <span role="img" aria-label="smile">😃</span></Col></Row>
             </Header>
             <Content   >
               <Row justify="center" align="middle" style={{height:"100%"}}>
